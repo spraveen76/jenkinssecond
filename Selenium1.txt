@@ -1,0 +1,112 @@
+
+
+WebElement oldwindow = driver.get.windowHandle;
+
+Set<Strings> handles = driver.get.windowHandles();
+
+for ( String newWindow : handles )
+(
+ driver.switchTo().window(newWindow);
+ 
+
+        driver.switchTo().window();
+		driver.switchTo().alert();
+		driver.switchTo().frame();
+ 
+		/ Dropdown --> Get no of options in Dropdown Feature
+
+		List<WebElement> noofoptions =  ab.getOptions();
+		int optionsvalue = noofoptions.size();
+		
+		/ Select Method in Dropdown
+		Select ab = new Select(dropdownbox);  [SELECT]
+		ab.selectByIndex(3);     
+		ab.selectByValue("2");
+		ab.selectByVisibleText("Selenium");
+		
+-->		File files = new File("C:\\Users\\Praveen\\Downloads");[ download and check downloaded files are downloaded - 
+        findElementByLinkText nee to be used]
+		File[] alllist = files.listFiles();	
+		for (File file : alllist) {
+		if(file.getName().equals("testleaf.xlsx")) 
+		
+		//Buttons -->Find the position in Buttons Feature
+
+		WebElement locationBox = driver.findElementById("position");
+		Point xypoint = locationBox.getLocation();
+		int xValue = xypoint.getX();
+		int yValue = xypoint.getY();
+		
+		//find the size in buttons
+			
+		WebElement findsize = driver.findElementById("size");
+		int height = findsize.getSize().getHeight();
+		int width = findsize.getSize().getWidth();
+		System.out.println("height is :" + height + " width is "+ width );
+		
+		// find the color in Buttons
+		WebElement colorbuton = driver.findElementById("color");
+		String color = colorbuton.getCssValue("background-color");
+		
+		//Find number of windows opened
+		int noofwindow = driver.getWindowHandles().size();
+        System.out.println(noofwindow);
+        
+		//Gettext in iframes
+		  String gettext = driver.findElementById("Click").getText();
+          System.out.println(gettext);
+		  
+		   // Find no of frames
+		 List<WebElement> noofframes = driver.findElementsByTagName("iframe");////////// Tagname for frames size
+           int size = noofframes.size();
+           System.out.println(size);
+		   
+		   //Get text in Links
+		     WebElement getTextBox = driver.findElementByName("username");
+				String value = getTextBox. getAttribute("value");
+				
+			//	Getting text
+			if(brokenimg.getAttribute("naturalWidth").equals("0")) //naturalWidth - W in caps
+		  
+		//drag and drop
+		Actions variable = new actions (driver); 				[ACTIONS ]
+		variable.dragAndDrop(from,to).build().perform()
+		
+		//Click and hold - to select multiple options in dropdown menu     [ACTIONS]
+		Actions actions = new actions (driver);
+		actions.clickAndHold(firstvariable.get(0)).build().perform(); 
+		   
+		//Download verify using java
+		WebElement Excel =	driver.findElementByLinkText("Download Excel");//linktext
+		 File files = new Files("path")
+		   Files[] filecheck = files.listfiles(); // listFiles
+		 for (File files : alllist) {
+		if(file.getName().equals("testleaf.xlsx")) { // java so use getName() - dont user selenium method
+			System.out.println("file is downloaded");
+			break;}
+			
+		//Upload a file
+		StringSelection selection = new StringSelection(path);
+		Toolkit.getDefaultToolkit().getClipboard().setContents(selection,null);
+		Robot robot = new Robot();
+		robot.keypress(keyEvent.VK_CONTROL)
+		robot.keypress(keyEvent.VK_5)
+		robot.keyrelease(keyEvent.VK_CONTROL)
+		robot.keyrelease(keyEvent.VK_5)
+		robot.keypress(keyEvent.VK_ENTER)
+		robot.keyrelease(keyEvent.VK_ENTER)	
+			
+			@RunWith(Cucumber.options)
+			@CucumberOptions(feature = "featureFiles/OpenGoogle.features", glue="stepDefinitions",dryRun = false,strict=true,monochrome=true,
+			plugin={"html:WebReport/html/html,json:report.json/json,
+		  
+		  format= {"html:repot/WebReport",json:report/jsponreport.json",		  
+		   
+		   glur.dryrun,strict,monochrome,format,tags5
+		   
+		   
+   
+		 
+		
+		
+		
