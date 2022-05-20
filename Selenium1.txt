@@ -104,7 +104,7 @@ for ( String newWindow : handles )
 		   
 		   glur.dryrun,strict,monochrome,format,tags5
 		   
-		   
+		   system.out.println("Text added");
    
 		 
 		
