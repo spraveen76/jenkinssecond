@@ -106,7 +106,7 @@ for ( String newWindow : handles )
 		   
 		   system.out.println("Text added");
    
-		 
+		   system.out.println("Text added second");
 		
 		
 		
